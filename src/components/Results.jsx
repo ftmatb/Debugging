@@ -1,6 +1,6 @@
 import { calculateInvestmentResults, formatter } from "../util/investment.js";
 
-const results = [];
+const results = [];//bring this variable outside the function to avoid re-initialization on every render
 
 export default function Results({ input }) {
   calculateInvestmentResults(input, results);
